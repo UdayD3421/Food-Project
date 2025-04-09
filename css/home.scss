@@ -16,6 +16,14 @@ body, html {
 }
 body {
   max-width: 100vw;
+  background-color: #ffffff;
+    color: #222;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &.dark-mode {
+      background-color: #121212;
+      color: #eee;
+    }
 }
 
 // Hero Section
@@ -43,7 +51,7 @@ body {
 
     button {
       margin-top: 20px;
-      background-color: $background-color1;
+      background-color: var(--background-color1);
       color: black;
       padding: 10px 20px;
       border-radius: 5px;
@@ -79,7 +87,7 @@ body {
   h2 {
     font-size: 2rem;
     margin-bottom: 30px;
-    color: $primary-color;
+    color: var(--primary-color);
 
     @media (max-width: 480px) {
       font-size: 1.5rem;
@@ -95,11 +103,11 @@ body {
     padding: 0 10px;
 
     .card {
-      background: $background-color;
-      border: 1px solid $border-color;
+      background: var(--background-color);
+      border: 1px solid var(--border-color);
       border-radius: 10px;
       padding: 15px;
-      box-shadow: 0 2px 5px $box-shadow;
+      box-shadow: 0 2px 5px var(--box-shadow);
       transition: transform 0.3s ease;
       width: 100%;
       text-align: left;

@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food-Home</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/home.css">
     <script defer src="./js/homepage.js"></script>
-    <script defer src="./js/main.js"></script>
+    <script defer src="./js/dark.js"></script>
 
 </head>
 <body>
     <header class="header">
         <div class="logo">
-          <img src="./assets/images/logo.png" alt="myLogo" />
+          <a href="./index.html">
+            <img src="./assets/images/logo.png" alt="myLogo" />
+          </a>
           <p>FOOD</p>
         </div>
         <nav class="nav">
@@ -37,19 +46,26 @@
           <button id="search-btn">Search</button>
           <button id="dark-mode-toggle" title="Toggle Dark Mode">🌙</button>
         </div> -->
+        <!-- <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙button</button> -->
+
+        
+      <div class="theme-toggle">
+        <label for="darkModeToggle">🌙</label>
+        <input type="checkbox" id="darkModeToggle">
+    </div>
       </header>
 
       <section class="hero">
         <div class="hero-content">
             <h1>Taste the Diversity of India</h1>
-            <button>
+            <button data-target=".featured-regional-foods">
                 Explore Cuisines
             </button>
         </div>
     </section>
 
     <!-- featured Regional Food section -->
-    <section class="featured-regional-foods">
+    <section id="featured-regional-foods" class="featured-regional-foods">
         <h2>Featured Regional Foods</h2>
         <div class="cards-container" id="cards-container">
             <!-- Cards will be dynamically inserted here -->

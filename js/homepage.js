@@ -48,7 +48,17 @@
 
 
 //writing fresh
-alert("if getting to fetch data then check image in json file");
+
+    document.querySelector('button[data-target]').addEventListener('click', function () {
+        const targetSelector = this.getAttribute('data-target');
+        const targetElement = document.querySelector(targetSelector);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+
+
+// alert("if getting to fetch data then check image in json file");
 async function fetchData() {
     const cardsContainer = document.getElementById("cards-container");
     const loader = document.getElementById("loader");

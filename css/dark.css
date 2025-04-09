@@ -1,0 +1,95 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --header-bg: #f5f5f5;
+  --footer-bg: #e5e5e5;
+  --accent-color: #ff5733;
+  --card-bg: white;
+  --gallery-bg: white;
+}
+
+body.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: #ff5733 !important;
+  --header-bg: #2b2b2b;
+  --footer-bg: #2b2b2b;
+  --card-bg: #2e2e2e;
+  --gallery-bg: #1e1e1e;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.4s, color 0.4s;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+header, footer {
+  background-color: var(--header-bg);
+  transition: background-color 0.4s;
+}
+
+header nav .navbar li a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+header nav .navbar li,
+header nav .navbar .dropdown,
+header nav .navbar .dropdown1,
+header nav .navbar .dropdown2 {
+  position: relative;
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+header button {
+  color: white;
+}
+
+.theme-toggle {
+  margin-left: auto;
+  padding: 0.5rem;
+  position: sticky;
+  top: 40rem;
+  right: 1rem;
+  z-index: 9999;
+  background: white;
+  border-radius: 8px;
+  width: 50px;
+}
+.theme-toggle input {
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+.rider-stats {
+  color: var(--text-color);
+}
+
+.adventure-filters .filter-btn {
+  background: var(--card-bg);
+}
+
+.about-intro .about-text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  animation: fadeIn 1.5s ease-in-out;
+  color: gray;
+}
+
+footer .copyright {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  color: #d4411e;
+}
+
+.gallery-section {
+  padding: 40px;
+  background-color: var(--gallery-bg);
+}/*# sourceMappingURL=dark.css.map */

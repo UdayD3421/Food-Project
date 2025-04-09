@@ -1,0 +1,275 @@
+// :root {
+//     --bg-color: #ffffff;
+//     --text-color: #000000;
+//     --header-bg: #f5f5f5;
+//     --footer-bg: #e5e5e5;
+//   }
+  
+//   body.dark-mode {
+//     --bg-color: #1e1e1e;
+//     --text-color: black !important;
+//     --header-bg: #2b2b2b;
+//     --footer-bg: #2b2b2b;
+//   }
+  
+//   /* Apply the variables globally */
+//   body {
+//     background-color: var(--bg-color);
+//     color: var(--text-color);
+//     transition: background-color 0.4s, color 0.4s;
+//   }
+  
+//   header, footer {
+//     background-color: var(--header-bg);
+//     transition: background-color 0.4s;
+//   }
+//   header nav .navbar li a {
+//     text-decoration: none;
+//     color: #ff5733;
+// }
+// header nav .navbar li, header nav .navbar .dropdown, header nav .navbar .dropdown1, header nav .navbar .dropdown2 {
+//     position: relative;
+//     color: #ff5733;
+//     font-weight: bold;
+//     font-size: 20px;
+//     cursor: pointer;
+// }
+// header button{
+//     color: white;
+// }
+// .rider-stats{
+//     color: black;
+// }
+
+//   .theme-toggle {
+//     margin-left: auto;
+//     padding: 0.5rem;
+//   }
+//   .theme-toggle input {
+//     cursor: pointer;
+//     transform: scale(1.5);
+//   }
+
+//   .adventure-filters .filter-btn {
+  
+//     background: white;
+   
+// }
+// footer .copyright {
+//     font-size: 0.9rem;
+//     opacity: 0.8;
+//     color: white;
+// }
+
+// .about-intro .about-text p {
+//     font-size: 1.2rem;
+//     line-height: 1.5;
+//     animation: fadeIn 1.5s ease-in-out;
+//     color: gray;
+// } 
+// .theme-toggle {
+//     position: sticky;        // stays in the same place even when you scroll
+//     top: 40rem;              
+//     right: 1rem;            
+//     z-index: 9999;          // ensures it's above other elements
+//     background: white;      
+//     border-radius: 8px;     
+//     padding: 0.5rem;
+//     width: 50px;
+//   }
+//   body.dark-mode {
+//     --bg-color: #1e1e1e;
+//     --text-color: #ff5733 !important;
+//     --header-bg: #2b2b2b;
+//     --footer-bg: #2b2b2b;
+
+//     var(--primary-color): #4CAF50;
+//     var(--primary-color1):#2e7d32;
+//     var(--hover-color): darken(var(--primary-color), 10%);
+//     var(--background-color): #000000;
+//     var(--background-color1):#898989;
+//     var(--text-color): #ebe6e6;
+//     var(--active):#c3c5c5;
+//     var(--border-color1):rgb(240, 240, 240);
+//     var(--recipe-bgcolor):#96854b;
+//     var(--recipe-heading):#f35454;
+//     var(--overlay-color): rgb(54, 151, 180);
+//     var(--button-color): #3f3f3f;
+//     var(--button-color1):var(--primary-color);
+//     var(--button-text):#333;
+//     var(--button-text1):rgb(93, 87, 87);
+//     var(--hover-text-color): rgb(183, 123, 123);
+//     var(--hover-button-backgroud):#4588a0;
+//     var(--border-color):var(--text-color);
+//     var(--grad-color): rgb(207, 99, 224), rgb(83, 83, 77),rgb(242, 131, 131),rgb(136, 180, 25),rgb(255, 0, 119);
+//     var(--grad-cuisine-heading): rgb(128, 0, 0),rgb(255, 132, 0),rgb(38, 128, 0);
+//     var(--heading-h2):rgb(245, 3, 221),rgb(21, 0, 255),rgb(0, 174, 255);
+//     var(--card-bgcolor):#282827;
+//     var(--carousel-background-color):#5ecbfd;
+//     var(--submit-btn):#00796b;
+//     var(--submit-btn1):#004d40;
+
+//     var(--box-shadow0):rgba(255, 255, 255, 0.5);
+//     var(--box-shadow):rgba(255, 255, 255, 0.1);
+//     var(--box-shadow1):rgba(255, 255, 255, 0.15);
+
+//     var(--faq):#252525;
+//     var(--faq1):#7e7e7c;
+//     var(--faq2):#221f13;
+
+//     var(--footer-bgcolor):#222;
+//     var(--footer-text):white;
+//     var(--link):#ccc;
+//     var(--hover):#fff;
+// }
+
+// html, body {
+//   overflow-x: hidden;//here the about us horizon scroll fixed
+// }
+
+// // section.gallery-section {
+// //   padding: 40px;
+// //   background-color: black;
+// // }
+// .gallery-section {
+//   padding: 40px;
+//   background-color: white; // default light mode
+
+//   // Dark Mode override
+//   body.dark-mode & {
+//     background-color: #1e1e1e;//gallery part
+//   }
+// }
+
+// footer .copyright {
+//   font-size: 0.9rem;
+//   opacity: 0.8;
+//   color: #d4411e ;
+// }
+
+
+// body.dark-mode {
+//     background-color: #121212; /* Dark background */
+//     color: white; /* Light text */
+// }
+
+// .header.dark-mode {
+//     background-color: #1e1e1e; /* Dark header */
+// }
+
+// .nav.dark-mode a {
+//     color: white; /* Light text for nav links */
+// }
+
+// .footer.dark-mode {
+//     background-color: #1e1e1e; /* Dark footer */
+//     color: white; /* Light text */
+// }
+
+:root {
+  // Light mode variables
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --header-bg: #f5f5f5;
+  --footer-bg: #e5e5e5;
+  --accent-color: #ff5733;
+  --card-bg: white;
+  --gallery-bg: white;
+}
+
+body.dark-mode {
+  // Dark mode overrides
+  --bg-color: #1e1e1e;
+  --text-color: #ff5733 !important;
+  --header-bg: #2b2b2b;
+  --footer-bg: #2b2b2b;
+  --card-bg: #2e2e2e;
+  --gallery-bg: #1e1e1e;
+}
+
+// Global application of variables
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.4s, color 0.4s;
+}
+
+html, body {
+  overflow-x: hidden; // Fix horizontal scroll
+}
+
+header, footer {
+  background-color: var(--header-bg);
+  transition: background-color 0.4s;
+}
+
+// Navigation styles
+header nav .navbar li a {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+header nav .navbar li,
+header nav .navbar .dropdown,
+header nav .navbar .dropdown1,
+header nav .navbar .dropdown2 {
+  position: relative;
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+// Header button
+header button {
+  color: white;
+}
+
+// Dark theme toggle
+.theme-toggle {
+  margin-left: auto;
+  padding: 0.5rem;
+  position: sticky;
+  top: 40rem;
+  right: 1rem;
+  z-index: 9999;
+  background: white;
+  border-radius: 8px;
+  width: 50px;
+
+  input {
+    cursor: pointer;
+    transform: scale(1.5);
+  }
+}
+
+// Section-specific styles
+
+.rider-stats {
+  color: var(--text-color);
+}
+
+.adventure-filters .filter-btn {
+  background: var(--card-bg);
+}
+
+// About section
+.about-intro .about-text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  animation: fadeIn 1.5s ease-in-out;
+  color: gray;
+}
+
+// Footer
+footer .copyright {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  color: #d4411e;
+}
+
+// Gallery section
+.gallery-section {
+  padding: 40px;
+  background-color: var(--gallery-bg);
+}

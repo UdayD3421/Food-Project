@@ -4,24 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Regional Food</title>
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/reg.css" />
+    <script defer src="./js/dark.js"></script>
+
   </head>
   <body id="regional">
     <header class="header">
       <div class="logo">
-        <img src="./assets/images/logo.png" alt="myLogo" />
+        <a href="./index.html">
+          <img src="./assets/images/logo.png" alt="myLogo" />
+        </a>
+        
         <p>FOOD</p>
       </div>
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item">
+          <!-- <a href="./index.html">Home Page</a> -->
             <a href="#">Regional Foods</a>
-            <ul class="dropdown">
-              <li><a href="#">North</a></li>
-              <li><a href="#">South</a></li>
-              <li><a href="#">East</a></li>
-              <li><a href="#">West</a></li>
-            </ul>
+              <ul class="dropdown">
+                <li><a href="#">North</a></li>
+                <li><a href="#">South</a></li>
+                <li><a href="#">East</a></li>
+                <li><a href="#">West</a></li>
+              </ul>
           </li>
           <li class="nav-item"><a href="./recipes.html">Recipes</a></li>
           <li class="nav-item"><a href="./cultural.html">Cultural Significance</a></li>
@@ -33,6 +39,10 @@
         <input type="text" id="search" placeholder="Search..." />
         <button id="search-btn1" class="search-btn">Search</button>
       </div>
+      <div class="theme-toggle">
+        <label for="darkModeToggle">🌙</label>
+        <input type="checkbox" id="darkModeToggle">
+    </div>
     </header>
 
     <!-- <div>

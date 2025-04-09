@@ -1,84 +1,144 @@
 .footer {
-    background-color: $footer-bgcolor;
-    color: $footer-text;
-    padding: 40px 20px 20px;
-  
-    .footer-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 30px;
-      max-width: 1200px;
-      margin: 0 auto;
-  
-      .social-media,
-      .newsletter {
-        flex: 1 1 300px;
-  
-        h3 {
-          font-size: 1.3rem;
-          margin-bottom: 15px;
-          color: $primary-color;
-        }
-  
-        ul {
-          list-style: none;
-          padding: 0;
-  
-          li {
-            margin-bottom: 10px;
-  
-            a {
-              color: $link;
-              text-decoration: none;
-              transition: color 0.3s;
-  
-              &:hover {
-                color: $hover;
-              }
-            }
-          }
-        }
-  
-        form {
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-  
-          input[type="email"] {
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            font-size: 1rem;
-          }
-  
-          button {
-            padding: 10px;
-            background-color: $primary-color;
-            color: $hover;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background-color 0.3s ease;
-  
+  background-color: var(--footer-bgcolor);
+  color: var(--footer-text);
+  padding: 40px 20px 20px;
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .social-media,
+    .newsletter {
+      flex: 1 1 300px;
+
+      h3 {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+        color: var(--primary-color);
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 10px;
+
+          a {
+            color: var(--link); // Replace with the appropriate variable
+            text-decoration: none;
+            transition: color 0.3s;
+
             &:hover {
-              background-color: $primary-color1;
+              color: var(--hover); // Replace with the appropriate variable
             }
           }
         }
       }
-  
-      .copyright {
-        flex-basis: 100%;
-        text-align: center;
-        margin-top: 30px;
-  
-        p {
-          font-size: 0.9rem;
-          color: $text-color;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        input[type="email"] {
+          padding: 10px;
+          border-radius: 5px;
+          border: solid var(--border-color1) 1px;
+          font-size: 1rem;
+        }
+
+        button {
+          padding: 10px;
+          background-color: var(--primary-color);
+          color: var(--hover); // Replace with the appropriate variable
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 1rem;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: var(--primary-color1); // Adjusted variable name
+          }
         }
       }
     }
+
+    .copyright {
+      flex-basis: 100%;
+      text-align: center;
+      margin-top: 30px;
+
+      p {
+        font-size: 0.9rem;
+        color: var(--text-color);
+      }
+    }
+  }
+
+  // Responsive starts
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: stretch;
+      text-align: center;
+
+      .social-media,
+      .newsletter {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+
+      form {
+        align-items: center;
+
+        input[type="email"] {
+          width: 100%;
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .footer-container {
+      gap: 20px;
+      padding: 0 10px;
+
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      form {
+        input[type="email"],
+        button {
+          font-size: 0.95rem;
+        }
+      }
+
+      .copyright p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+.theme-toggle {
+  position: sticky;        // stays in the same place even when you scroll
+  top: 40rem;              
+  right: 1rem;            
+  z-index: 9999;          // ensures it's above other elements
+  background: white;      
+  border-radius: 8px;     
+  padding: 0.5rem;
+  width: 50px;
 }
