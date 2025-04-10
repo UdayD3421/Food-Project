@@ -39,10 +39,14 @@
         <input type="text" id="search" placeholder="Search..." />
         <button id="search-btn1" class="search-btn">Search</button>
       </div>
-      <div class="theme-toggle">
+      <!-- <div class="theme-toggle">
         <label for="darkModeToggle">🌙</label>
         <input type="checkbox" id="darkModeToggle">
-    </div>
+    </div> -->
+    <label class="switch">
+      <input type="checkbox" id="darkModeToggle">
+      <span class="slider round"></span>
+    </label>
     </header>
 
     <!-- <div>
@@ -67,11 +71,12 @@
       <section id="recipe-cards"></section>
       <section id="recipe-details" class="hidden"></section>
     </main>
+    
 
     <section class="map-section">
       <h2>Explore by Region</h2>
       <div class="india-map-container">
-        <img src="https://i.postimg.cc/9FpBYgxz/map.jpg" alt="India Map" />
+        <img class="img" src="ind.svg" alt="India Map" />
         <div
           class="map-marker"
           data-region="north"

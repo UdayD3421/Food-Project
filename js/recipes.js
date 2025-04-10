@@ -81,7 +81,7 @@ function displayFavorites() {
 
   favorites.map(recipe => {
     const card = document.createElement("div");
-    card.className = "card";
+    card.className = "card-fav";
     card.innerHTML = `
       <img src="${recipe.image}" class="fav-img" alt="${recipe.name}">
       <div class="content">

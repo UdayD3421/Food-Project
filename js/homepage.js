@@ -76,7 +76,7 @@ async function fetchData() {
                 <h3>${d.name}</h3>
                 <img src="${d.img}" alt="${d.name}" class="card-image">
                 <p>${d.description}</p>
-                <a href="${d.link}" class="card-button">See More</a>
+                <span id="see-btn"><a href="${d.link}" class="card-button">See More</a></span>
             </div>
         `).join("");
     } catch (error) {

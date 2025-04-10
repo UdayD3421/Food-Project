@@ -1,7 +1,8 @@
 :root {
-  --primary-color: #4CAF50;
-  --primary-color1: #2e7d32;
-  --hover-color: #388E3C; /* darken($primary-color, 10%) */
+  --body:white;
+  --primary-color: #000000;
+  --primary-color1: #343534;
+  --hover-color: #484a48; /* darken($primary-color, 10%) */
   --background-color: #fff;
   --background-color1: #e0f7fa;
   --text-color: #333;
@@ -11,16 +12,17 @@
   --recipe-heading: #d62828;
   --overlay-color: rgb(54, 151, 180);
   --button-color: #eee;
-  --button-color1: #4CAF50; /* $primary-color */
+  --button-color1: #383938; /* $primary-color */
   --button-text: #333;
   --button-text1: white;
   --hover-text-color: white;
   --hover-button-background: #45a049;
   --border-color: #333; /* $text-color */
-  --grad-color: red, yellow, white, green, blue;
+  --grad-color: #FFDEE9, #B5FFFC, #C9FFBF, #FFD6A5;
   --grad-cuisine-heading: green, yellow, purple;
-  --heading-h2: rgb(245, 3, 221), rgb(21, 0, 255), rgb(0, 174, 255);
+  --heading-h1: linear-gradient(#FF4081, #448AFF, #18FFFF);
   --card-bgcolor: #fff3e0;
+  --card-bg:rgb(194, 191, 191);
   --carousel-background-color: #e1f5fe;
   --submit-btn: #00796b;
   --submit-btn1: #004d40;
@@ -31,51 +33,65 @@
   --box-shadow: rgba(0, 0, 0, 0.1);
   --box-shadow1: rgba(0, 0, 0, 0.15);
   --faq: #ffe0b2;
-  --faq1: #ffcc80;
+  --faq1: #a2a2a2;
   --faq2: #fff8e1;
-  --footer-bgcolor: #ffffff;
+  --footer-bgcolor: #aea9a9cb;
   --footer-text: rgb(0, 0, 0);
   --link: #282fb7;
-  --hover: #fff;
+  --hover: #c2bcbc;
   --error-color: #f44336;
+  --search-btn-hover:rgb(50, 50, 236);
+  --white-text:white;
+  --bot-color:#724ae8;
+  --bot-bgcolor:rgb(188, 188, 188);
 }
 
 body.dark {
-  --primary-color: #4CAF50;
-  --primary-color1: #2e7d32;
-  --hover-color: #3e8e41; /* darken($primary-color, 10%) */
-  --background-color: #000000;
-  --background-color1: #898989;
-  --text-color: #ebe6e6;
-  --active: #c3c5c5;
-  --border-color1: rgb(240, 240, 240);
-  --recipe-bgcolor: #96854b;
-  --recipe-heading: #f35454;
-  --overlay-color: rgb(54, 151, 180);
-  --button-color: #3f3f3f;
-  --button-color1: #4CAF50; /* $primary-color */
-  --button-text: #ffffff;
-  --button-text1: rgb(225, 169, 169);
-  --hover-text-color: rgb(183, 123, 123);
-  --hover-button-background: #4588a0;
-  --border-color: #ebe6e6; /* $text-color */
-  --grad-color: rgb(207, 99, 224), rgb(83, 83, 77), rgb(242, 131, 131), rgb(136, 180, 25), rgb(255, 0, 119);
-  --grad-cuisine-heading: rgb(128, 0, 0), rgb(255, 132, 0), rgb(38, 128, 0);
-  --heading-h2: rgb(245, 3, 221), rgb(21, 0, 255), rgb(0, 174, 255);
-  --card-bgcolor: #282827;
-  --carousel-background-color: #5ecbfd;
-  --submit-btn: #00796b;
-  --submit-btn1: #004d40;
-  --box-shadow0: rgba(255, 255, 255, 0.5);
-  --box-shadow: rgba(255, 255, 255, 0.1);
-  --box-shadow1: rgba(255, 255, 255, 0.15);
-  --faq: #252525;
-  --faq1: #7e7e7c;
-  --faq2: #221f13;
-  --footer-bgcolor: #222;
-  --footer-text: white;
-  --link: #fafafa;
-  --hover: #fff;
+  --white-text:white;
+  --body:rgb(52, 52, 52);
+  --primary-color: #ffffff; /* Bright green */
+  --primary-color1: #bfc5bf; /* Deeper green */
+  --hover-color: #c3c3c3; /* Lighter green on hover */
+  --background-color: #121212; /* Very dark gray */
+  --background-color1: #1E1E1E; /* Slightly lighter dark */
+  --card-bg:rgb(106, 104, 104);
+  --text-color: #F5F5F5; /* Bright whiteish text */
+  --active: #80DEEA; /* Cyan for active states */
+  --border-color1: #BDBDBD; /* Light gray border for contrast */
+  --recipe-bgcolor: #424242; /* Dark gray for recipe cards */
+  --recipe-heading: #FF7043; /* Vivid orange-red heading */
+  --overlay-color: rgba(0, 150, 136, 0.6); /* Teal overlay */
+  --button-color: #333333; /* Button base dark */
+  --button-color1: #363937; /* Green primary button */
+  --button-text: #FAFAFA; /* Light button text */
+  --button-text1: #FFFFFF; /* Brighter white text */
+  --hover-text-color: #FFFFFF;
+  --hover-button-background: #1DE9B6; /* Aqua green on hover */
+  --border-color: #BDBDBD;
+  --grad-color: #F50057, #7C4DFF, #00BCD4, #00E676, #FFEA00; /* bright contrast gradient */
+  --grad-cuisine-heading: #FF5722, #FFC107, #8BC34A;
+  --heading-h1: linear-gradient(to bottom, #FFB300 , #FF6F00 , #FF3D00 );
+  --card-bgcolor: #263238; /* Blue-gray dark card */
+  --carousel-background-color: #37474F; /* Deeper blue-gray */
+  --submit-btn: #009688; /* Teal */
+  --submit-btn1: #00695C; /* Darker teal */
+  --button-bg-color: rgba(255, 255, 255, 0.08);
+  --button-hover-bg: rgba(255, 255, 255, 0.16);
+  --button-text-color: #ECEFF1;
+  --box-shadow0: rgba(255, 255, 255, 0.25);
+  --box-shadow: rgba(255, 255, 255, 0.08);
+  --box-shadow1: rgba(255, 255, 255, 0.1);
+  --faq: #2C2C2C;
+  --faq1: #424242;
+  --faq2: #616161;
+  --footer-bgcolor: #1A1A1A;
+  --footer-text: #E0E0E0;
+  --link: #82B1FF;
+  --hover: #E3F2FD;
+  --error-color: #EF5350; /* Soft but noticeable red */
+  --search-btn-hover:rgb(166, 203, 248);
+  --bot-color:#724ae8;
+  --bot-bgcolor:rgb(69, 69, 69);
 }
 
 .header {
@@ -122,7 +138,7 @@ body.dark {
   transition: color 0.3s ease;
 }
 .header .nav .nav-list .nav-item a:hover {
-  color: var(--primary-color);
+  color: var(--search-btn-hover);
 }
 .header .nav .nav-list .nav-item .dropdown {
   display: none;
@@ -139,11 +155,11 @@ body.dark {
 .header .nav .nav-list .nav-item .dropdown li a {
   display: block;
   padding: 10px 15px;
-  color: #333;
+  color: var(--text-color);
 }
 .header .nav .nav-list .nav-item .dropdown li a:hover {
   background-color: var(--background-color);
-  color: var(--primary-color);
+  color: var(--search-btn-hover);
 }
 .header .nav .nav-list .nav-item:hover .dropdown {
   display: block;
@@ -167,7 +183,7 @@ body.dark {
   padding: 0 15px;
   flex: 1;
   height: 30px;
-  background-color: var(--primary-color);
+  background-color: var(--submit-btn);
   color: var(--button-color);
   border: none;
   border-radius: 6px;
@@ -178,7 +194,7 @@ body.dark {
   box-sizing: border-box;
 }
 .header .search-container #search-btn1:hover {
-  background-color: var(--primary-color) 1;
+  background-color: var(--search-btn-hover);
 }
 .header .search-container #dark-mode-toggle {
   padding: 0 12px;
@@ -259,6 +275,64 @@ body.dark {
   cursor: pointer;
 }
 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #282929;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 2px #cedde9;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 .footer {
   background-color: var(--footer-bgcolor);
   color: var(--footer-text);
@@ -318,8 +392,9 @@ body.dark {
 .footer .footer-container .social-media form button,
 .footer .footer-container .newsletter form button {
   padding: 10px;
-  background-color: var(--primary-color);
-  color: var(--hover);
+  background: var(--submit-btn);
+  color: var(--button-color);
+  font-weight: 400;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -328,7 +403,9 @@ body.dark {
 }
 .footer .footer-container .social-media form button:hover,
 .footer .footer-container .newsletter form button:hover {
-  background-color: var(--primary-color1);
+  background-color: var(--submit-btn1);
+  color: var(--text-color);
+  font-weight: 400;
 }
 .footer .footer-container .copyright {
   flex-basis: 100%;
@@ -405,6 +482,7 @@ body {
   max-width: 100vw;
   max-height: 100vh;
   box-sizing: border-box;
+  background-color: var(--body);
 }
 
 #filters {
@@ -416,19 +494,94 @@ body {
 #filters button {
   padding: 0.5rem 1rem;
   width: 130px;
-  height: 30px;
-  background: var(--button-color1);
+  height: 35px;
+  color: var(--button-text);
   border: none;
-  border-radius: 10px;
-  color: var(--button-text1);
+  border-radius: 20px;
+  border: solid 1px var(--border-color);
   cursor: pointer;
+  background-color: var(--button-color);
   transition: all 0.3s;
 }
 #filters button:hover {
-  background: var(--hover-button-backgroud);
+  background-color: var(--hover-color);
+  color: var(--button-color);
 }
 #filters button.active {
-  background: var(--active);
+  background-color: var(--primary-color1);
+  color: var(--button-color);
+}
+
+.fav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 5vh;
+}
+
+.card-fav {
+  background-color: var(--recipe-bgcolor);
+  border: 1px solid var(--border-color);
+  color: var(--primary-color);
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 2px 5px var(--box-shadow);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  padding: 5px 5px 0 5px;
+}
+.card-fav:hover {
+  transform: scale(1.03);
+}
+.card-fav img {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.card-fav .buttons {
+  display: flex;
+  flex: 1;
+  min-width: 100%;
+  margin: 10px 0 10px;
+  justify-content: center;
+}
+.card-fav .buttons button {
+  color: var(--button-text);
+  border: solid 1px var(--border-color);
+  cursor: pointer;
+  background-color: var(--button-color);
+  border-radius: 10px;
+  width: auto;
+  padding: 5px 10px;
+}
+.card-fav .buttons button:hover {
+  background-color: var(--hover-color);
+  color: var(--button-color);
+  font-weight: 400;
+}
+
+.fav-btn {
+  padding: 0.5rem 1rem;
+  width: 130px;
+  height: 35px;
+  color: var(--button-text);
+  border: none;
+  border-radius: 20px;
+  border: solid 1px var(--border-color);
+  cursor: pointer;
+  background-color: var(--button-color);
+  transition: all 0.3s;
+}
+.fav-btn:hover {
+  background-color: var(--hover-color);
+  color: var(--button-color);
+}
+.fav-btn.active {
+  background-color: var(--primary-color1);
+  color: var(--button-color);
 }
 
 #recipe-cards {
@@ -438,11 +591,13 @@ body {
   padding: 1rem;
 }
 #recipe-cards .card {
-  background: var(--background-color);
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
   border-radius: 10px;
   box-shadow: 0 2px 5px var(--box-shadow);
   overflow: hidden;
   transition: transform 0.3s ease;
+  padding: 5px 5px 0 5px;
 }
 #recipe-cards .card:hover {
   transform: scale(1.03);
@@ -458,10 +613,13 @@ body {
   padding: 1rem;
 }
 #recipe-cards .card .content h3 {
-  margin: 0 0 0.5rem;
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  color: var(--primary-color);
 }
 #recipe-cards .card .content p {
-  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  color: var(--text-color);
 }
 #recipe-cards .card .content button {
   margin-top: 1rem;
@@ -489,14 +647,16 @@ body {
   display: none;
 }
 #recipe-details h2 {
-  color: var(--recipe-heading);
+  color: var(--text-color);
 }
-#recipe-details ul, #recipe-details ol {
+#recipe-details ul, #recipe-details ol, #recipe-details h3 {
   margin: 0;
   padding-left: 1.2rem;
+  color: var(--text-color);
 }
 #recipe-details p {
   line-height: 1.5;
+  color: var(--text-color);
 }
 
 #add-recipe {
@@ -504,6 +664,11 @@ body {
   padding: 2rem;
   margin: 2rem 1rem;
   border-radius: 10px;
+}
+#add-recipe h2 {
+  margin: 10px 0 10px;
+  font-size: 1.2rem;
+  color: var(--primary-color);
 }
 #add-recipe form {
   display: flex;
@@ -514,6 +679,7 @@ body {
   resize: none;
   padding: 0.5rem;
   font-size: 1rem;
+  border-radius: 5px;
 }
 #add-recipe form button {
   background: var(--submit-btn);

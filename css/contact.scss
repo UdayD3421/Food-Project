@@ -17,6 +17,7 @@ body{
     max-width: 100vw;
     max-height: 100vh;
     box-sizing: border-box;
+    background-color: var(--body);
 }
 // body {
 //     font-family: Arial, sans-serif;
@@ -38,12 +39,13 @@ body{
     margin: 30px auto;
     background: var(--background-color);
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0 0 10px var(--box-shadow);
 }
 
-h1 {
+h1,h2 {
     text-align: center;
+    color: var(--text-color);
 }
 
 .form-group {
@@ -53,6 +55,7 @@ h1 {
 label {
     display: block;
     margin-bottom: 5px;
+    color: var(--text-color);
 }
 
 input, textarea {
@@ -74,7 +77,7 @@ input:focus, textarea:focus {
 
 button {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--text-color);
     border: none;
     padding: 10px 15px;
     cursor: pointer;
@@ -105,7 +108,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: #724ae8;
+    background: var(--bot-color);
     transition: all 0.2s ease;
   }
 
@@ -139,13 +142,14 @@ button:hover {
     padding: 16px 0;
     text-align: center;
     color: #fff;
-    background: #724ae8;
+    background: var(--bot-color);
   }
 
   .chatbot .chatbox {
     overflow-y: auto;
     height: 310px;
     padding: 30px 20px 100px;
+    background-color: var(--bot-bgcolor);
   }
 
   .chatbox .chat {
@@ -216,23 +220,27 @@ button:hover {
     }
     #locationInfo{
         font-size: larger;
+        color: var(--text-color);
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     .quiz {
         font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
+        background-color: var(--background-color);
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 80vh;
         margin: 0;
-    }
+        // box-shadow: 0 4px 12px white;    
+      }
     
     .quiz-container {
-        background: white;
+        background: var(--body);
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 12px rgb(132, 131, 131);    
         width: 300px;
         text-align: center;
     }
@@ -240,15 +248,17 @@ button:hover {
     button {
         margin-top: 20px;
         padding: 10px 15px;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
+        background-color: var(--submit-btn);
+        color: var(--text-color);
+        border: solid var(--border-color) 1px;
         border-radius: 5px;
         cursor: pointer;
     }
     
     button:hover {
-        background-color: #45a049;
+        background-color: var(--submit-btn1);
+        // color: var(--text-color);
+        color: var(--button-text-color);
     }
     
     .hidden {
