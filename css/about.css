@@ -44,6 +44,7 @@
   --white-text:white;
   --bot-color:#724ae8;
   --bot-bgcolor:rgb(188, 188, 188);
+  --link-hover:var(--background-color);
 }
 
 body.dark {
@@ -92,6 +93,7 @@ body.dark {
   --search-btn-hover:rgb(166, 203, 248);
   --bot-color:#724ae8;
   --bot-bgcolor:rgb(69, 69, 69);
+  --link-hover:var(--hover);
 }
 
 .header {
@@ -374,7 +376,7 @@ input:checked + .slider:before {
 }
 .footer .footer-container .social-media ul li a:hover,
 .footer .footer-container .newsletter ul li a:hover {
-  color: var(--hover);
+  color: var(--link-hover);
 }
 .footer .footer-container .social-media form,
 .footer .footer-container .newsletter form {

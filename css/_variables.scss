@@ -45,6 +45,7 @@
     --white-text:white;
     --bot-color:#724ae8;
     --bot-bgcolor:rgb(188, 188, 188);
+    --link-hover:var(--background-color);
 }
 
 // body.dark {
@@ -149,4 +150,6 @@ body.dark {
     --search-btn-hover:rgb(166, 203, 248);
     --bot-color:#724ae8;
     --bot-bgcolor:rgb(69, 69, 69);
+    --link-hover:var(--hover);
+
 }
